@@ -11,5 +11,7 @@ A basic vim statusline:
 ## How to install:
 
 **Vim 8**
-	* Pull the repo into `~/.vim/pack/default/start`
-	* Make sure you have `set laststatus=2` or greater
+
+* Pull the repo into `~/.vim/pack/default/start`
+
+* Make sure you have `set laststatus=2` or greater
