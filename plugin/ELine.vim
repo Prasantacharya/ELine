@@ -1,3 +1,10 @@
+""""" Loading in script
+if exists("g:loaded_ELine")
+  finish
+endif
+let g:loaded_ELine = 1
+
+
 function! StatuslineMode()
   let l:mode=mode()
   if l:mode==#"n"
@@ -44,7 +51,7 @@ set statusline+=%#StatusLineTerm#
 set statusline+=\ %M " is a + if a file is changed since last save
 set statusline+=\ %{StatuslineMode()} "displays the 
 set statusline+=%#Search#
-set statusline+=\ %F  " filename of the file being edited
+set statusline+=\ %f  " filename of the file being edited
 set statusline+=%#GitGutterAdd#
 set statusline+=%{b:gitbranch}
 set statusline+=%#StatusLineNC#
